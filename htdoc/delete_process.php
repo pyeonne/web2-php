@@ -1,3 +1,3 @@
 <?php
-    unlink('data/'.$_POST['id']);
+    unlink('data/'.basename($_POST['id']));
     header('Location: /web2-php/htdoc/index.php');
